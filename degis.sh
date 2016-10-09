@@ -8,9 +8,9 @@ degis=`nslookup betrising.com 8.8.8.8|grep -i "Address" |grep -v "#"| cut -d " "
 
 if [ $degis != "162.144.94.89" ]
 then
-notify-send "değişti"
+notify-send "ip adresi değişti"
 else
-echo "değişim yok"
+echo "değişim yok (Durdurmak icin  CTRL+C kullanın)"
 fi
 
 sleep 5 
